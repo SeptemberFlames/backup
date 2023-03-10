@@ -1,0 +1,81 @@
+--清理账户库
+USE QPAccountsDB
+go
+	TRUNCATE TABLE AccountLevel;
+	TRUNCATE TABLE AccountsExpand;
+	TRUNCATE TABLE AccountsInfo;
+	TRUNCATE TABLE AccountsLoginRecord;
+	TRUNCATE TABLE ConfineAddress;
+	TRUNCATE TABLE ConfineContent;
+	TRUNCATE TABLE ConfineMachine;
+	UPDATE GameIdentifier SET IsReg = 0;
+	TRUNCATE TABLE RecyleAccontsInfo;
+	TRUNCATE TABLE RegisterAddressLimit;
+	TRUNCATE TABLE RegisterDaySum;
+	TRUNCATE TABLE RegisterMachineLimit;
+	UPDATE ReserveIdentifier SET Distribute=0;
+	TRUNCATE TABLE SystemGoodNumber;
+
+GO
+
+-- 清理控制库
+USE QPControlDB
+go
+	TRUNCATE TABLE ControlBaiRenRecord;
+	TRUNCATE TABLE ControlServerData;
+	TRUNCATE TABLE ControlServerRoomHandsel;
+	TRUNCATE TABLE ControlUserData;
+	TRUNCATE TABLE ControlUserInfo;
+	TRUNCATE TABLE ControlUserRecord;
+GO
+
+--清理记录库
+USE QPRecordDB
+go
+	TRUNCATE TABLE GuanLianHaoInfo;
+	TRUNCATE TABLE OnLineStreamInfo;
+	TRUNCATE TABLE RecordDailyInCome;
+	TRUNCATE TABLE RecordDailyPay;
+	TRUNCATE TABLE RecordDailyTrans;
+	TRUNCATE TABLE RecordDailyTransRecordID;
+	TRUNCATE TABLE RecordDailyWealth;
+	TRUNCATE TABLE RecordDrawScoreSum;
+	TRUNCATE TABLE RecordGameInCome;
+	TRUNCATE TABLE RecordGrantMember;
+	TRUNCATE TABLE RecordGrantTreasure;
+	TRUNCATE TABLE RecordOfficePayInfo;
+	TRUNCATE TABLE RecordOnLineOrder;
+	TRUNCATE TABLE RecordScoreInCome;
+	TRUNCATE TABLE RecordSystemGive;
+	TRUNCATE TABLE RecordTodayWinScore;
+	TRUNCATE TABLE RecordUserGameInfo;
+	TRUNCATE TABLE SystemStreamInfo;
+	TRUNCATE TABLE TodayEnterKind;
+	TRUNCATE TABLE TodayEnterServer;
+GO
+
+--清理金币库
+USE QPTreasureDB
+go
+	TRUNCATE TABLE GameActiveInfo;
+	TRUNCATE TABLE GameScoreInfo;
+	TRUNCATE TABLE GameScoreLocker;
+	TRUNCATE TABLE GameTableHandsel;
+	TRUNCATE TABLE OnLineOrderRecord;
+	TRUNCATE TABLE PrivateGameCreateRecord;
+	TRUNCATE TABLE PrivateGameRecord;
+	TRUNCATE TABLE PrivateGameRecordChild;
+	TRUNCATE TABLE PrivateGameRecordUserRecordID;
+	TRUNCATE TABLE RecordDrawScore;
+	TRUNCATE TABLE RecordRecycleScore;
+	TRUNCATE TABLE RecordUserInout;
+	TRUNCATE TABLE RecordUserInsure;
+	TRUNCATE TABLE RecordUserScore;
+	TRUNCATE TABLE SVip;
+	TRUNCATE TABLE SVipLinquLog;
+	TRUNCATE TABLE SystemGive;
+	TRUNCATE TABLE TurntableRecord;
+	TRUNCATE TABLE UserSignRecord;
+	TRUNCATE TABLE WeiXinFriendShare;
+	TRUNCATE TABLE WeiXinPerdayShare;
+GO
