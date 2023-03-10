@@ -1,0 +1,7 @@
+﻿本目录内说明如下：
+    1、mongo-c-driver：
+	是已经编译好的mongo-c-driver开发所需的头文件、lib库文件和dll文件，参照【MongoDB VS2010开发环境配置说明.doc】，即可使用开发。
+	
+	2、src_demo
+	使用mongo-c-driver的例子，包含了数据库常用的增、删、改、查、批量插入等操作
+	使用VS2013编译，直接运行即可，已测试OK！
