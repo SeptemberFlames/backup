@@ -1,4 +1,4 @@
---ÇåÀíÕË»§¿â
+--æ¸…ç†è´¦æˆ·åº“
 USE QPAccountsDB
 go
 	TRUNCATE TABLE AccountLevel;
@@ -18,7 +18,7 @@ go
 
 GO
 
--- ÇåÀí¿ØÖÆ¿â
+-- æ¸…ç†æ§åˆ¶åº“
 USE QPControlDB
 go
 	TRUNCATE TABLE ControlBaiRenRecord;
@@ -29,7 +29,7 @@ go
 	TRUNCATE TABLE ControlUserRecord;
 GO
 
---ÇåÀí¼ÇÂ¼¿â
+--æ¸…ç†è®°å½•åº“
 USE QPRecordDB
 go
 	TRUNCATE TABLE GuanLianHaoInfo;
@@ -54,12 +54,12 @@ go
 	TRUNCATE TABLE TodayEnterServer;
 GO
 
---ÇåÀí½ğ±Ò¿â
+--æ¸…ç†é‡‘å¸åº“
 USE QPTreasureDB
 go
-	TRUNCATE TABLE GameActiveInfo;
 	TRUNCATE TABLE GameScoreInfo;
 	TRUNCATE TABLE GameScoreLocker;
+	TRUNCATE TABLE GameTableActive;
 	TRUNCATE TABLE GameTableHandsel;
 	TRUNCATE TABLE OnLineOrderRecord;
 	TRUNCATE TABLE PrivateGameCreateRecord;
